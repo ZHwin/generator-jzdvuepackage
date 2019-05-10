@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "author": "周莹 夏冠",
   "description": "金之盾 智慧禁毒项目",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "alpha": "vue-cli-service build --mode alpha",
