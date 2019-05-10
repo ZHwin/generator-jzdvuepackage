@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title></title>
+  
+    <script>
+     function getBroswer(){
+      var sys = {};
+      var ua = navigator.userAgent.toLowerCase();
+      var s;
+     (s = ua.match(/edge\/([\d.]+)/)) ? sys.edge = s[1] :
+     (s = ua.match(/rv:([\d.]+)\) like gecko/)) ? sys.ie = s[1] :
+     (s = ua.match(/msie ([\d.]+)/)) ? sys.ie = s[1] :
+     (s = ua.match(/firefox\/([\d.]+)/)) ? sys.firefox = s[1] :
+     (s = ua.match(/chrome\/([\d.]+)/)) ? sys.chrome = s[1] :
+     (s = ua.match(/opera.([\d.]+)/)) ? sys.opera = s[1] :
+     (s = ua.match(/version\/([\d.]+).*safari/)) ? sys.safari = s[1] : 0;
+     if (sys.edge) return { broswer : "Edge", version : sys.edge };
+     if (sys.ie) return { broswer : "IE", version : sys.ie };
+     if (sys.firefox) return { broswer : "Firefox", version : sys.firefox };
+     if (sys.chrome) return { broswer : "Chrome", version : sys.chrome };
+     if (sys.opera) return { broswer : "Opera", version : sys.opera };
+     if (sys.safari) return { broswer : "Safari", version : sys.safari };
+     return { broswer : "", version : "0" };}
+     var whichBroswer= getBroswer();
+     var broswer=whichBroswer.broswer;
+     var version=whichBroswer.version.split(".")[0];
+     if(broswer!="Chrome"){
+        window.location.href="./broswer_update.html"
+     }else{
+         if(version<68){
+            window.location.href="./broswer_update.html" 
+         }
+     } 
+    </script>
+    <link href="/static/css/zTreeStyle.css" rel="stylesheet">
+    <!-- <link href="./static/css/pobstyle.css" rel="stylesheet"> -->
+    <link href="/static/css/reset.css" rel="stylesheet">
+    <script src="/static/js/jquery-1.10.2.min.js"></script>
+    <!-- <script src="./static/js/pageoffice.js" id="po_js_main"></script> -->
+    <script src="/static/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/static/js/jquery.ztree.core.min3.5.28.js"></script>
+    <script src="/static/js/jquery.ztree.excheck.min3.5.28.js"></script>
+    <script src="/static/js/alasql.min0.4.11.js"></script>
+    <script src="/static/js/vue.min2.5.2.js"></script>
+    <script src="/static/js/vuex.min3.0.1.js"></script>
+    <script src="/static/js/axios.min0.17.1.js"></script>
+    <script src="/static/js/vue-router3.0.1.js"></script>
+    <script src="/static/js/echarts.min4.2.1.js"></script>
+    <script src="/static/js/element-ui2.7.2.js"></script>
+    <script src="/static/js/ag-grid-enterprise.min20.1.0.js"></script>
+    <script src="/static/js/vue-seamless-scroll.min.js"></script> 
+</head>
+
+<body>
+    <noscript>
+        <strong>We're sorry but vue_shce doesn't work properly without JavaScript enabled. Please enable it to
+            continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+</body>
+
+</html>

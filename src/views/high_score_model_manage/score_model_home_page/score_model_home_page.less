@@ -1,0 +1,377 @@
+.main-outBox{
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    .score-model-top{
+        margin: auto;
+        width: 100%;
+        height: 20%;
+        overflow: hidden;
+        .score-model-total{
+            width:24.625%;
+            float: left;
+            height: 100%;
+            margin-left: 0.5%;
+            background-color: #ffffff;
+            overflow: hidden;
+            position: relative;
+            .model-total-left{
+                width: 21%;
+                // height: 60%;
+                border-radius: 50%;
+                margin: auto 2%;
+                position: absolute;
+                top: 50%;
+                background-color: #F35F53;
+                color: #ffffff;
+                font-size: 22px;
+                font-weight: 600;
+                // line-height: 70px;
+                float: left;
+            }
+            // 不同颜色
+            .model-total-orange{
+                background-color: #F39454;
+            }
+            .model-total-yellow{
+                background-color: #E2DF1E;
+            }
+            .model-total-blue{
+                background-color: #53AEF4;
+            }
+            .model-total-right{
+                width: 75%;
+                height: 100%;
+                color: #000000;
+                font-size: 22px;
+                font-weight: 600;
+                float: left;
+                margin-left: 25%;
+                .model-total-level{
+                    font-size: 16px;
+                    font-weight: 400;
+                    height: 30%;
+                    margin-top: 10%;
+                    // line-height: 50px;
+                    text-align: left;
+                    .model-total-num{
+                        float: right;
+                        font-size: 30px;
+                        font-weight: 600;
+                        width: 26%;
+                        height: 80%;
+                        margin-top: -5%;
+                        margin-right: 20%;
+                    }
+                }
+                .model-total-percent{
+                    text-align: right;
+                    font-size: 14px;
+                    font-weight: 400;
+                    // line-height: 24px;
+                    padding-right: 10%;
+                }
+            }
+
+        }
+        .score-model-total:first-child{
+            margin-left: 0;
+        }
+    }
+    .score-model-center{
+        margin: auto;
+        width: 100%;
+        height:40%;
+        margin-top: 1%;
+        overflow: hidden;
+        .score-model-graphical{
+            width: 33%;
+            height: 100%;
+            margin-left: 0.5%;
+            background-color: #fff;
+            float: left;
+            overflow: hidden;
+            #echarts-age,#echarts-category{
+                width: 90%;
+                height: 88%;
+                margin: 1% 5%;
+            }
+            .score-sex{
+                width: 100%;
+                height: 40%;
+                margin-bottom: 2%;
+                overflow: hidden;
+                .socre-man-sex{
+                    width: 45%;
+                    height: 100%;
+                    margin: 1% 2% 1% 4%;
+                    float: left;
+                    overflow: hidden;
+                    position: relative;
+                    img{
+                        width: 26px;
+                        height: 70px;
+                        position: absolute;
+                        top: 50%;
+                        left: 20%;
+                        margin-top: -35px;
+                    }
+                    .sex-right{
+                        width: 55%;
+                        height: 90%;
+                        position: absolute;
+                        top: 10%;
+                        left: 20%;
+                        margin-left: 26px;
+                        .sex-tit{
+                            font-size: 16px;
+                            font-weight: 600;
+                            color:#858585;
+                            line-height: 40px;
+                            height: 40%;
+                        }
+                        .sex-num{
+                            vertical-align: middle;
+                            color:#000000;
+                            line-height: 40px;
+                            font-size: 26px;
+                            font-weight:600;
+                            height: 60%;
+                        }
+                    }
+                    
+                }
+                .socre-woman-sex{
+                    width: 45%;
+                    height: 100%;
+                    margin: 1% 0;
+                    float: left;
+                    overflow: hidden;
+                    position: relative;
+                    img{
+                        width: 26px;
+                        height: 70px;
+                        position: absolute;
+                        top: 50%;
+                        left: 20%;
+                        margin-top: -35px;
+                    }
+                    .sex-right{
+                        width: 55%;
+                        height: 90%;
+                        position: absolute;
+                        top: 10%;
+                        left: 20%;
+                        margin-left: 26px;
+                        .sex-tit{
+                            font-size: 16px;
+                            font-weight: 600;
+                            color:#858585;
+                            line-height: 40px;
+                            height: 40%;
+                        }
+                        .sex-num{
+                            vertical-align: middle;
+                            color:#000000;
+                            line-height: 40px;
+                            font-size: 26px;
+                            font-weight:600;
+                            height: 60%;
+                        }
+                    }
+                }
+            }
+            .score-percent{
+                width: 100%;
+                padding: 0 4% 20px;
+                height: 45%;
+                margin-top: 2%;
+                margin: auto;
+                overflow-y: auto;
+                // padding-bottom: 20px;
+                .score-percent-level{
+                    width:90%;
+                    height: 24px;
+                    text-align: right;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+            
+        }
+        .score-model-graphical:first-child{
+            margin-left: 0;
+        }
+    }
+    .score-model-bottom{
+        margin: auto;
+        width: 100%;
+        height: 35%;
+        margin-top: 1%;
+        overflow: hidden;
+        .score-model-suspect{
+            width: 66.5%;
+            height: 100%;
+            background-color: #fff;
+            float: left;
+            .score-model-head{
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                font-size: 12px;
+                font-weight: 600;
+                border-bottom: 1px solid #F5F5F5;
+                .score-model-th{
+                    float: left;
+                    height: 100%;
+                    color: #000000;
+                    text-align: center;
+                }
+            }
+            .carouselOutBox{
+                width: 100%;
+                height: 60%;
+                overflow: hidden;
+            .carouselUl{
+                height: 100%;
+                    li{
+                        border-bottom: 1px solid #F5F5F5;
+                        span{
+                            display: inline-block;
+                            text-align: center;
+                            height: 30px;
+                            line-height: 30px;
+                            color: #000000;
+                            overflow: hidden;
+                            white-space: nowrap; 
+                            text-overflow: ellipsis;
+                            i{
+                                font-style: normal;
+                                padding: 2px;
+                                width: 30px;
+                                height: 30px;
+                                margin: auto;
+                                // background-color: red;
+                                border-radius: 50%;
+                                color:#ffffff;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+               
+        }
+        .score-model-group{
+            width: 33%;
+            height: 100%;
+            margin-left: 0.5%;
+            background-color: #fff;
+            float: left;
+            .group-box{
+                width: 95%;
+                margin-left: 5%;
+                height: 80%;
+                overflow-y: auto;
+                padding-left: 10px;
+            }
+        }
+       
+    }
+
+    .score-model-title{
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        color: #000000;
+        margin-top: 5px;
+    }
+    .task-content{
+        position: absolute;
+        top:280px;
+        left:20px;
+        right: 20px;
+        bottom: 20px;
+        .content-top{
+            position: absolute;
+            left:0;
+            right: 0;
+            top:0;
+            bottom: 32px;
+            /deep/.ag-theme-balham .ag-ltr .oprateCell{
+                border: none;
+                border-right: 0 !important;
+            }
+        }
+        .content-bottom{
+            position: absolute;
+            left:0;
+            right: 0;
+            bottom: 0;
+            height: 32px;
+        }
+    } 
+    .reviewPassBox{
+        width:230px;
+        height: 60px;
+        background-color: #CCEFB9;
+        position: absolute;
+        top:260px;
+        left:50%;
+        right: 0;
+        bottom: 0;
+        margin-left: -115px;
+        border: 1px solid #A7C798;
+        text-align: left;
+        .reviewPassImg{
+            vertical-align: middle;
+            width: 30px;
+            height: auto;
+            margin: auto 20px;
+        }
+        span{
+            line-height: 60px;
+            font-size: 22px;
+            font-weight: 600px;
+            color:#5AB421;
+            vertical-align: middle;
+        }
+    }
+}
+/deep/.cellYellowColor{
+    color:#f68142 !important;
+}
+/deep/.cellRedColor{
+    color:#da2721 !important;
+}
+
+// 层叠掉时间轴样式
+/deep/.el-timeline .el-timeline-item{
+    padding-bottom: 10px;
+}
+
+  
+ /*滚动条整体部分,必须要设置*/
+ ::-webkit-scrollbar{
+    width: 5px;
+    height: 10px;
+    background-color: #E7E7E9;
+}
+/*滚动条的轨道*/
+::-webkit-scrollbar-track{
+    // box-shadow: inset 0 0 5px rgba(0,0,0,.3);
+    background-color: #E7E7E9;
+    // rgba(255,0,0,0);
+}
+/*滚动条的滑块按钮*/
+::-webkit-scrollbar-thumb{
+    // border-radius: 10px;
+    background-color: #EB5B5B;
+    // box-shadow: inset 0 0 5px #000;
+}
+/*滚动条的上下两端的按钮*/
+// ::-webkit-scrollbar-button{
+//     height: 5px;
+//     background-color: #E7E7E9;
+// }

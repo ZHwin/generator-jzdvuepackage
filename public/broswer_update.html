@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico">
+    <title>浏览器升级提示</title>
+  <style  type="text/css">
+  body{ text-align:center;background-color: #40B23E} 
+  button {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: hsl(246, 41%, 21%);
+  overflow: hidden;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+button::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #3cefff;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+      -ms-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: -webkit-transform 0.45s ease-in-out;
+  transition: -webkit-transform 0.45s ease-in-out;
+  -o-transition: transform 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #161616;
+}
+
+button:hover::before {
+  -webkit-transform: translate(-50%, -50%) scale(15);
+      -ms-transform: translate(-50%, -50%) scale(15);
+          transform: translate(-50%, -50%) scale(15);
+}
+  </style>
+
+</head>
+
+<body>
+    <div style="margin-top:20px">
+            <h3>推荐您使用高版本Google浏览器</h4>
+            <button type="submit" onclick="downGoogle()">点我下载</button>
+    </div>
+   
+</body>
+<script>
+    function downGoogle() {
+        var elemIF = document.createElement("iframe");
+        elemIF.src ='http://10.73.41.6:7800/Google.Chrome.68.0.3440.106.x86.exe';
+        elemIF.style.display = "none";
+        document.body.appendChild(elemIF);
+    }
+</script>
+
+</html>

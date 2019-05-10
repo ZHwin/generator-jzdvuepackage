@@ -1,0 +1,71 @@
+.main-outBox{
+    height: 100%;
+    overflow: hidden;
+    .task-top{
+        position: absolute;
+        left:20px;
+        right: 20px;
+        top:20px;
+        height: 170px;
+    }
+    .task-content{
+        position: absolute;
+        top:190px;
+        left:20px;
+        right: 20px;
+        bottom: 20px;
+        .content-top{
+            position: absolute;
+            left:0;
+            right: 0;
+            top:0;
+            bottom: 32px;
+            /deep/.ag-theme-balham .ag-ltr .oprateCell{
+                border: none;
+                border-right: 0 !important;
+            }
+        }
+        .content-bottom{
+            position: absolute;
+            left:0;
+            right: 0;
+            bottom: 0;
+            height: 32px;
+        }
+    } 
+    .reviewPassBox{
+        width:230px;
+        height: 60px;
+        background-color: #CCEFB9;
+        position: absolute;
+        top:260px;
+        left:50%;
+        right: 0;
+        bottom: 0;
+        margin-left: -115px;
+        border: 1px solid #A7C798;
+        text-align: left;
+        .reviewPassImg{
+            vertical-align: middle;
+            width: 30px;
+            height: auto;
+            margin: auto 20px;
+        }
+        span{
+            line-height: 60px;
+            font-size: 22px;
+            font-weight: 600px;
+            color:#5AB421;
+            vertical-align: middle;
+        }
+    }
+}
+/deep/.cellYellowColor{
+    color:#f68142 !important;
+}
+/deep/.cellRedColor{
+    color:#da2721 !important;
+}
+/deep/.ag-header-group-cell-label .ag-header-group-text{
+    color:#2c3e50 !important;
+}

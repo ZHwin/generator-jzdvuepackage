@@ -1,0 +1,70 @@
+.strong-batch-parent{
+    height: 100%;
+    overflow: hidden;
+    .strong-batch-top{
+        position: absolute;
+        left:20px;
+        right: 20px;
+        top:20px;
+        height: 234px;
+        .row_center{
+        height:63px;
+        display: flex;
+	    flex-direction: row;
+	   flex-wrap: nowrap;
+	    justify-content: flex-start;
+       align-items: center;
+       align-content: center;
+        }
+   /deep/#upload{
+    div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        .el-upload-list__item {
+      margin-bottom: 10px;
+        }
+     }
+
+   }
+    }
+    .strong-batch-content{
+        position: absolute;
+        top:254px;
+        left:20px;
+        right: 20px;
+        bottom: 20px;
+        .content-top{
+            position: absolute;
+            left:0;
+            right: 0;
+            top:0;
+            bottom: 32px;
+            /deep/.ag-theme-balham .ag-ltr .oprateCell{
+                border: none;
+                border-right: 0 !important;
+            }
+        }
+        .content-bottom{
+            position: absolute;
+            left:0;
+            right: 0;
+            bottom: 0;
+            height: 32px;
+        }
+    } 
+
+}
+
+/deep/.cellGreenColor{
+    color:#84D945 !important;
+    }
+/deep/.cellYellowColor{
+    color:#f68142 !important;
+}
+/deep/.cellRedColor{
+    color:#da2721 !important;
+}

@@ -1,0 +1,38 @@
+.task-parent{
+    height: 100%;
+    overflow: hidden;
+    .task-top{
+        position: absolute;
+        left:20px;
+        right: 20px;
+        top:20px;
+        height: 170px;
+    }
+    .task-content{
+        position: absolute;
+        top:190px;
+        left:20px;
+        right: 20px;
+        bottom: 20px;
+        .content-top{
+            position: absolute;
+            left:0;
+            right: 0;
+            top:0;
+            bottom: 32px;
+            /deep/.ag-theme-balham .ag-ltr .oprateCell{
+                border: none;
+                border-right: 0 !important;
+            }
+        }
+        .content-bottom{
+            position: absolute;
+            left:0;
+            right: 0;
+            bottom: 0;
+            height: 32px;
+        }
+    } 
+ 
+
+}

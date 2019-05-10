@@ -1,0 +1,66 @@
+{
+  "name": "anti_drug",
+  "version": "0.1.0",
+  "author": "周莹 夏冠",
+  "description": "金之盾 智慧禁毒项目",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "alpha": "vue-cli-service build --mode alpha",
+    "build": "vue-cli-service build && node ./upload.js",
+    "build:report": "vue-cli-service build --report",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "ag-grid": "18.1.2",
+    "ag-grid-community": "20.0.0",
+    "ag-grid-enterprise": "20.0.0",
+    "ag-grid-vue": "20.0.0",
+    "alasql": "0.4.11",
+    "echarts": "4.2.1",
+    "element-ui": "2.7.2",
+    "iview": "3.0.1",
+    "jquery": "1.11.0",
+    "jzd.public.compt": "^0.1.47",
+    "screenfull": "4.2.0",
+    "vue": "2.5.2",
+    "vue-property-decorator": "7.3.0",
+    "vue-router": "3.0.1",
+    "vue-seamless-scroll": "1.1.16",
+    "vuex": "3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "3.4.0",
+    "@vue/cli-plugin-eslint": "3.7.0",
+    "@vue/cli-service": "3.4.0",
+    "@vue/eslint-config-standard": "4.0.0",
+    "babel-eslint": "10.0.1",
+    "babel-plugin-import": "1.8.0",
+    "compression-webpack-plugin": "2.0.0",
+    "copy-webpack-plugin": "5.0.3",
+    "cross-env": "5.2.0",
+    "eslint": "5.16.0",
+    "eslint-plugin-vue": "5.0.0",
+    "ftp": "^0.3.10",
+    "image-webpack-loader": "4.6.0",
+    "less": "3.0.4",
+    "less-loader": "4.1.0",
+    "optimize-css-assets-webpack-plugin": "5.0.1",
+    "svg-sprite-loader": "4.1.3",
+    "terser-webpack-plugin": "1.2.3",
+    "vue-cli-plugin-better-webpack-bundle-analyzer": "^0.1.2",
+    "vue-cli-plugin-iview": "1.0.6",
+    "vue-template-compiler": "2.5.2",
+    "webpack-bundle-analyzer": "*"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

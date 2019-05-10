@@ -1,0 +1,140 @@
+/* 公用的顶部样式 */
+.nav-outBox {
+    height: 100%;
+    overflow: hidden;
+  }
+  .nav-top {
+    width: 100%;
+    height: 132px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    img {
+      margin-left: 35px;
+      margin-right: 20px;
+    }
+    .nav-title {
+      color: #FCF911;
+                font-size: 36px;
+                font-weight: 600;
+              
+    }
+  }
+  .nav-bc {
+    width: 100%;
+    height: 100px;
+    background: url('../../../assets/img/yujing_banner.gif') no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
+  /deep/ .el-menu-item-group__title {
+    padding: 0;
+  }
+
+  .nav-left {
+    position: absolute;
+    top: 132px;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background: #ffffff;
+    i {
+      margin-right: 5px;
+      width: 18px;
+      height: 20px;
+      text-align: center;
+      vertical-align: middle;
+      background-size: cover;
+      display: inline-block;
+    }
+  }
+  .nav-right {
+    position: absolute;
+    left: 200px;
+    top: 132px;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #edf5f8;
+    padding: 20px;
+  }
+
+  .menuitemclass {
+    padding-right: 32px;
+    color: #303133;
+  }
+
+ /deep/ .el-menu-item,.el-submenu__title  {
+  font-size: 16px;
+  line-height: 50px;
+  height: 50px;
+    &.is-active {
+      background-color: #2B84E0;
+      color: #ffffff !important;
+      &::after {
+        content: "";
+        height: 100%;
+        width: 4px;
+        background-color: #094583;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+    &.is-hover{
+      background-color: #2B84E0;
+      color: #ffffff !important;
+      &::after {
+        content: "";
+        height: 100%;
+        width: 4px;
+        background-color: #094583;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+  /deep/.el-menu-item:hover,.el-submenu__title:hover{
+    background-color: #2B84E0;
+    color: #ffffff !important;
+  }
+  .el-submenu__title span{
+    font-size: 16px;
+  }
+  .el-menu-item.is-hover span,.el-menu-item.is-hover i,.el-menu-item.is-active span,.el-menu-item.is-active i{
+    color: #ffffff !important;
+  }
+  // 导航右边那个全警和禁毒
+  .menu-anti-flag{
+    width:40px;
+    height: 25px;
+    float: right;
+    margin-top: 10px;
+    margin-right: -40px;
+    background: url('../../../assets/img/Anti-virus.png') no-repeat;
+  }
+  .menu-secu-flag{
+    width:40px;
+    height: 25px;
+    float: right;
+    margin-top: 10px;
+    margin-right: -40px;
+    background: url('../../../assets/img/allPolice.png') no-repeat;
+}
+.el-menu-item.is-active .menu-anti-flag{
+  background: url('../../../assets/img/Anti-virus-cho.png') no-repeat;
+}
+.el-menu-item.is-active .menu-secu-flag{
+  background: url('../../../assets/img/allPolice-cho.png') no-repeat;
+}

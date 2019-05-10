@@ -1,0 +1,229 @@
+/* 公共样式重置 */
+html,body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+ul,li,ol{
+  list-style-type:none;
+}
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  width: 100%;
+  height: 100%;
+}
+.line{
+  width: 80px;
+  height: 1px;
+  border-top: solid #995527 2px
+}
+.line_display{
+  width: 88px;
+  height: 1px;
+  border-top: solid transparent 2px 
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.red {
+  color: #f71004 !important;
+}
+.margin0{
+  margin: 0 !important;
+}
+
+.center_row{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center; 
+	align-items: center;
+	align-content: center;
+}
+.togo_row{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	align-items: center;
+	align-content: center;
+}
+.center_column{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+}
+
+
+/* ag-grid样式重置 */
+/* aggrid里面工具栏的隐藏 */
+.ag-theme-balham .ag-header-cell-menu-button .ag-icon-menu{
+  display: none !important;
+}
+.ag-theme-balham .ag-header-cell-label{
+  width: calc(100%) !important;
+}
+.ag-header-group-cell-label{
+  justify-content: center;
+}
+
+.ag-header-cell-label {
+  justify-content: center;
+}
+.ag-theme-balham .ag-header-row{
+  border: 0!important;
+  background-color: #ECE9FC!important;
+}
+.border-top{
+  border-top:1px solid #D5D6E2;
+}
+.text-auto{
+  position: absolute;
+  top:-16px;
+}
+.ag-theme-balham .ag-paging-panel {
+  justify-content: center;
+}
+.ag-theme-balham .ag-paging-panel {
+  border-top: none;
+}
+/* aggrid表格线样式重置 */
+.ag-theme-balham .ag-body-viewport .ag-row{
+  border-color: #cbcbcb;
+}
+.ag-theme-balham .ag-body-viewport .ag-cell{
+  border-right: 1px solid #cbcbcb !important;
+}
+.ag-theme-balham .ag-body-viewport .ag-cell-focus{
+  border-right: 1px solid #0091EA !important;
+}
+/* aggrid列表表头的样式重置 */
+.ag-theme-balham .ag-header-cell, .ag-theme-balham .ag-header-group-cell{
+  background-color: #ECE9FC;
+}
+.ag-theme-balham .ag-header-cell-label .ag-header-cell-text{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 32px;
+  color: #2c3e50;
+}
+/* 表头竖线样式 */
+.ag-theme-balham .ag-header-cell::after, .ag-theme-balham .ag-header-group-cell::after {
+  border-right: 1px solid rgba(189, 195, 199, 0.5);
+  content: "";
+  height: 46px!important;
+  position: absolute; 
+  right: 0;
+  text-indent: -2000px;
+  top: -8px!important;
+  }
+
+/* elmentui样式重置 */
+.el-row {
+  margin-bottom: 10px;
+}
+.el-row:last-child {
+  margin-bottom: 0;
+}
+
+
+.el-col .el-input {
+  width: 80%;
+  height: 30px;
+  /* margin-left: 5px; */
+  font-size: 12px;
+}
+.el-input .el-input__inner {
+  width: 100%;
+  height: 26px;
+  line-height: 30px;
+  background: transparent;
+}
+/* el-button的样式定义 */
+.btn-purple{
+  background-color: #5D4DD2 !important;
+  width: 100px !important;
+}
+.btn-blue{
+  background-color: #1773C8 !important;
+  width: 100px !important;
+}
+.btn-green{
+  background-color: #129633 !important;
+  width: 100px !important;
+}
+
+/* popover的触发 */
+.el-popper {
+  margin: 0 !important;
+  padding: 0;
+}
+
+.el-input__prefix .el-input__icon,.el-input__suffix .el-input__icon {
+  line-height: 30px;
+}
+.el-col .el-date-editor{
+  height: 22px;
+}
+
+/*时间轴的样式定义*/
+.el-timeline{
+   text-align: left!important;
+}
+.el-timeline .el-timeline-item{
+  padding-bottom: 50px;
+}
+.el-timeline .el-timeline-item .el-timeline-item__wrapper{
+  top:5px;
+}
+.el-timeline .el-timeline-item .el-timeline-item__node--large{
+  width:50px;
+  height:50px; 
+  left:-20px;
+}
+.el-timeline .el-timeline-item .el-timeline-item__node--normal{
+  width:30px;
+  height: 30px; 
+  left:-10px;
+}
+
+
+
+
+
+/* 时间选择控件 */
+.el-col .ivu-input-icon{
+  height: 26px;
+  line-height: 26px;
+}
+.el-col .ivu-input{
+  height: 26px;
+}
+/* tab切换的样式统一 */
+ #app .el-tabs__header{
+  background: #f9f9f9;
+  margin: 0;
+}
+div .el-tabs__item{
+  color: #8E8E8E;
+}
+#app .el-tabs--card>.el-tabs__header .el-tabs__item.is-active{
+  border-bottom-color:#f9f9f9;
+}
+
+/* ztree样式重置 */
