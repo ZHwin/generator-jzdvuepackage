@@ -20,7 +20,7 @@
     "echarts": "4.2.1",
     "element-ui": "2.7.2",
     "iview": "3.0.1",
-    "jquery": "1.11.0",
+    "jquery": "3.5.0",
     "jzd.public.compt": "^0.1.47",
     "screenfull": "4.2.0",
     "vue": "2.5.2",
